@@ -111,18 +111,18 @@ Use `NavigationService`. Block back navigation to login after auth.
 
 ## Open questions
 
-Fill before implementation:
+Resolved from module pack (`api-json.md`, `curl.md`, `models.md`, `ui-reference.md`):
 
-- [ ] Login endpoint and HTTP method
-- [ ] Exact request and response JSON (update [`api-json.md`](api-json.md))
-- [ ] Email-only vs username login
-- [ ] Password validation rules
-- [ ] Token expiration and refresh behaviour
-- [ ] Dashboard route
-- [ ] Forgot-password / registration requirements
-- [ ] Remember-session behaviour
-- [ ] Design / mockup (update [`ui-reference.md`](ui-reference.md))
-- [ ] Required languages (l10n)
-- [ ] MFA, CAPTCHA, or biometric requirements
+- [x] Login endpoint and HTTP method — `POST /v1/auth/login`
+- [x] Exact request and response JSON — [`api-json.md`](api-json.md) / [`models.md`](models.md)
+- [x] Email-only vs username login — email
+- [x] Password validation rules — required; min 6 (matches sample `123456`)
+- [x] Token expiration and refresh behaviour — `expiresIn` + refresh token; failed refresh → login
+- [x] Dashboard route — `DashboardView` via `NavigationService`
+- [x] Forgot-password / registration — navigation stubs only (out of scope)
+- [x] Remember-session behaviour — Remember Me stores email hint; tokens in secure storage restore session
+- [x] Design / mockup — [`ui-reference.md`](ui-reference.md) / [`ui_reference.png`](ui_reference.png)
+- [x] Required languages (l10n) — English strings via `AppStrings` (extensible)
+- [x] MFA, CAPTCHA, or biometric — not in scope; biometrics button is UI-only
 
 Before merge: complete **`DEFINITION_OF_DONE.md`**.

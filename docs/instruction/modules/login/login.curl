@@ -1,0 +1,7 @@
+curl --location 'https://api.company.com/v1/auth/login' \
+--header 'Content-Type: application/json' \
+--header 'Accept: application/json' \
+--data '{
+    "email":"admin@test.com",
+    "password":"123456"
+}'
