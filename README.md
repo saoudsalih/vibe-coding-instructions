@@ -13,3 +13,9 @@ All development rules for AI agents live in **`docs/instruction/`** (not under `
 | [`docs/instruction/DEFINITION_OF_DONE.md`](docs/instruction/DEFINITION_OF_DONE.md) | Sole pre-merge checklist |
 
 `lib/` is reserved for application code only.
+
+## Projects
+
+| Project | Start here |
+|---------|------------|
+| Chirakkal Group corporate website (Next.js) | [`projects/chirakkal-group/README.md`](projects/chirakkal-group/README.md): `DESIGN.md` spec + Claude Code agent team |
